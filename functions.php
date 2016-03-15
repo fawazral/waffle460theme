@@ -150,3 +150,12 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+
+function getcss(){
+    wp_enqueue_style('parent-css', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_script('my-scripts', get_stylesheet_directory_uri() .'/js/scripts.js', array('jquery'), '1.0.0', true );
+}
+
+add_action('wp_enqueue_scripts', 'getcss' );
