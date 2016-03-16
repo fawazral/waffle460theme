@@ -160,6 +160,8 @@ function getcss(){
 
 add_action('wp_enqueue_scripts', 'getcss' );
 
+require get_stylesheet_directory() .'/inc/options.php';
+
 
 if ( function_exists('register_sidebar') ) {
 register_sidebar(array(
