@@ -159,3 +159,55 @@ function getcss(){
 }
 
 add_action('wp_enqueue_scripts', 'getcss' );
+
+
+if ( function_exists('register_sidebar') ) {
+register_sidebar(array(
+'id' => 'ting',
+'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
+'after_widget' => '</li></ul>',
+'before_title' => '<h2 class="widgettitle">',
+'after_title' => '</h2>',
+));
+}
+    
+    
+register_sidebars( 1,
+array(
+'id' => 'ting2',
+'name' => 'widgetized-page-top',
+'before_widget' => '<div id="%1$s" class="widget %2$s">',
+'after_widget' => '</div>',
+'before_title' => '<h2 class="widgettitle">',
+'after_title' => '</h2>'
+));
+
+register_sidebars( 1,
+array(
+'id' => 'ting3',
+'name' => 'widgetized-page-bottom',
+'before_widget' => '<div id="%1$s" class="widget %2$s">',
+'after_widget' => '</div>',
+'before_title' => '<h2 class="widgettitle">',
+'after_title' => '</h2>'
+));
+
+register_sidebars( 1,
+array(
+'id' => 'ting4',
+'name' => 'widgetized-page-mid',
+'before_widget' => '<div id="%1$s" class="widget %2$s">',
+'after_widget' => '</div>',
+'before_title' => '<h2 class="widgettitle">',
+'after_title' => '</h2>'
+));
+
+register_sidebars( 1,
+array(
+'id' => 'ting4',
+'name' => 'widgetized-page-upper-mid',
+'before_widget' => '<div id="%1$s" class="widget %2$s">',
+'after_widget' => '</div>',
+'before_title' => '<h2 class="widgettitle">',
+'after_title' => '</h2>'
+));
