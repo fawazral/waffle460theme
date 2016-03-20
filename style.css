@@ -959,8 +959,8 @@ object {
 {
 	text-align: center;
     margin: 0px;
-	width: 80px;
-	height: 80px;
+	width: 100%;
+	height: 100%;
 }
 
 #footer-menu li
@@ -970,8 +970,8 @@ object {
 	border-right: solid 2px;
 	margin-left: 5px;
 	padding-right: 5px;
-	width: 80px;
-	height: 80px;
+	width: 100%;
+	height: 100%;
 }
 
 p.credits 
