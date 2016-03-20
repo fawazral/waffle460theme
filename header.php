@@ -42,7 +42,7 @@
 		</div><!-- .site-branding -->
 		
 		<div id="logo">
-	<img src="/images/logo.jpeg" width="350" height="150" title="logo" alt="logo" />
+	<img src="/images/logo.png" width="350" height="150" title="logo" alt="logo" />
 	</div>
 
 		<div id="header-menu">
