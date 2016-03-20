@@ -50,5 +50,5 @@
 	</header><!-- #masthead -->
 
 	<div id="logo">
-	<img src="/images/logo.png" width="350" height="150" title="Logo" alt="Logo of a company" />
+	<img src="/images/logo.png" width="350" height="150" title="Logo" alt="Logo" />
 	</div>
