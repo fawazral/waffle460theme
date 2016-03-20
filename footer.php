@@ -22,10 +22,7 @@
 		</div><!--#footer-menu -->
 		
 		<div class="info-site">
-			<p class="copyright">&copy; <?php echo date('Y'); ?> 
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'waffle460theme' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'waffle460theme' ), 'WordPress' ); ?></a> All Rights Reserved.</p>
-			<p class="credits">
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'waffle460theme' ), 'waffle460theme', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<p class="copyright">&copy; <?php echo date('Y'); ?> Made with &lt;3 by CCT460 students. All Rights Reserved.</p>
 		</div><!-- .site-info -->
 					
 	</footer><!-- #colophon -->
