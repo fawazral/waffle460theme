@@ -1001,13 +1001,14 @@ p.copyright
 {
 	text-align: center;
 	float: center;
-	width: 80px;
-	height: 80px;
+	width: 100%;
+	height: 100%;
 }
 
 #header-menu li
 {
 	display: inline;
+	float: center;
 	border-right: solid 2px;
 	margin-left: 5px;
 	padding-right: 5px;
