@@ -1018,3 +1018,8 @@ p.copyright
 	background-color: #808080;
 	color: #FFFFFF;
 }
+
+#logo
+{
+		float: left;
+}
