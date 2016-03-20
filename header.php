@@ -49,4 +49,6 @@
 		</div><!-- # header-menu -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="logo">
+	<img src="/images/logo.png" width="350" height="150" title="Logo" alt="Logo of a company" />
+	</div>
