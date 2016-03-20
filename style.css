@@ -951,3 +951,40 @@ object {
 .textwidget{
     text-align: center;
 }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer-menu
+{
+	float: center;
+	text-align: center;
+}
+
+#footer-menu li
+{
+	display: inline;
+	border-right: solid 2px;
+	margin-left: 5px;
+	padding-right: 5px;
+}
+
+p.credits 
+{
+	float: center;
+	text-align: center;
+	margin: 2px;
+}
+	
+#colophon 
+{
+	background-color: #FF0000;
+	color: #FFFFFF;
+}
+
+p.copyright 
+{
+	float: center;
+	text-align:center;
+	margin: 2px;
+}
