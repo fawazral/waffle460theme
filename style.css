@@ -992,3 +992,27 @@ p.copyright
 .foot-menu{
     padding: 0px;
 }
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header-menu
+{
+	text-align: center;
+    margin: 0px;
+}
+
+#header-menu li
+{
+	display: inline;
+	border-right: solid 2px;
+	margin-left: 5px;
+	padding-right: 5px;
+}
+
+#masthead
+{
+	background-color: #FF0000;
+	color: #FFFFFF;
+}
