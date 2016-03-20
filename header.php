@@ -42,7 +42,7 @@
 		</div><!-- .site-branding -->
 		
 		<div id="logo">
-		 echo "<img src='/images/logo.png'>";
+		 echo <img src='/images/logo.png'>
 		</div><!-- #header logo -->
 
 		<div id="header-menu">
