@@ -959,6 +959,8 @@ object {
 {
 	text-align: center;
     margin: 0px;
+	width: 80px;
+	height: 80px;
 }
 
 #footer-menu li
