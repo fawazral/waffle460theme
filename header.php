@@ -41,8 +41,8 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 		
-		<div id="logo">
-			echo <img src='/images/logo.png'>;
+		<div id="logo"> <?php
+		 echo <img src='/images/logo.png'>; ?>
 		</div><!-- #header logo -->
 
 		<div id="header-menu">
