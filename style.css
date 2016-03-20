@@ -993,14 +993,14 @@ p.copyright
     padding: 0px;
 }
 
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 
 #header-menu
 {
-	text-align: center;
-	float: center;
+	float: right;
 }
 
 #header-menu li
@@ -1014,6 +1014,7 @@ p.copyright
 	font-size: 20px;
 }
 
+
 #masthead
 {
 	background-color: #808080;
@@ -1022,5 +1023,5 @@ p.copyright
 
 #logo
 {
-		float: left;
+    float: left;
 }
