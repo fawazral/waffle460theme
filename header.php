@@ -42,14 +42,14 @@
 		</div><!-- .site-branding -->
 		
 		<div id="logo">
-		 echo <img src='MAMP/htdocs/wp-content/themes/waffle460theme/images/logo.png'>;
-		</div><!-- #header logo -->
+			<img src="/images/logo.png" width="350" height="150" alt="logo"/>;
 
 		<div id="header-menu">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'waffle460theme' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>	
 		</nav><!-- #site-navigation -->
+		</div><!-- #header logo -->
 		</div><!-- # header-menu -->
 	</header><!-- #masthead -->
 	
