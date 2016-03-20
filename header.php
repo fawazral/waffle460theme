@@ -40,6 +40,10 @@
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
+		
+		<div id="logo">
+	<img src="/images/logo.png" width="350" height="150" title="logo" alt="logo" />
+	</div>
 
 		<div id="header-menu">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -49,6 +53,4 @@
 		</div><!-- # header-menu -->
 	</header><!-- #masthead -->
 
-	<div id="logo">
-	<img src="/images/logo.png" width="350" height="150" title="logo" alt="logo" />
-	</div>
+	
