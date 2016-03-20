@@ -1000,6 +1000,7 @@ p.copyright
 #header-menu
 {
 	text-align: center;
+	float: center;
 }
 
 #header-menu li
