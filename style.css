@@ -1006,11 +1006,10 @@ p.copyright
 {
 	display: inline;
 	float: center;
-	border-right: solid 2px;
 	margin-left: 60px;
 	padding-right: 60px;
 	height: 50px;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 #masthead
