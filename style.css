@@ -966,9 +966,12 @@ object {
 #footer-menu li
 {
 	display: inline;
+	float: center; 
 	border-right: solid 2px;
 	margin-left: 5px;
 	padding-right: 5px;
+	width: 80px;
+	height: 80px;
 }
 
 p.credits 
