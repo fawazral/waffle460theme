@@ -41,13 +41,12 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
+		<div id="header-menu">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'waffle460theme' ); ?></button>
-			<div id="header-menu">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			</div>
-			
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>	
 		</nav><!-- #site-navigation -->
+		</div><!-- # header-menu -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

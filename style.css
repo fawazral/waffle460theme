@@ -1000,7 +1000,7 @@ p.copyright
 #header-menu
 {
 	text-align: center;
-    margin: 0px;
+	float: center;
 }
 
 #header-menu li
@@ -1013,6 +1013,6 @@ p.copyright
 
 #masthead
 {
-	background-color: #FF0000;
+	background-color: #808080;
 	color: #FFFFFF;
 }
