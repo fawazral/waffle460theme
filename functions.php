@@ -165,7 +165,7 @@ require get_stylesheet_directory() .'/inc/options.php';
 
 if ( function_exists('register_sidebar') ) {
 register_sidebar(array(
-'id' => 'ting',
+'id' => 'InfoBar',
 'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
 'after_widget' => '</li></ul>',
 'before_title' => '<h2 class="widgettitle">',
@@ -176,8 +176,8 @@ register_sidebar(array(
     
 register_sidebars( 1,
 array(
-'id' => 'ting2',
-'name' => 'widgetized-page-top',
+'id' => 'MainBar',
+'name' => 'BarOne',
 'before_widget' => '<div id="%1$s" class="widget %2$s">',
 'after_widget' => '</div>',
 'before_title' => '<h2 class="widgettitle">',
@@ -186,8 +186,8 @@ array(
 
 register_sidebars( 1,
 array(
-'id' => 'ting3',
-'name' => 'widgetized-page-bottom',
+'id' => 'bar1',
+'name' => 'BarTwo',
 'before_widget' => '<div id="%1$s" class="widget %2$s">',
 'after_widget' => '</div>',
 'before_title' => '<h2 class="widgettitle">',
@@ -196,8 +196,8 @@ array(
 
 register_sidebars( 1,
 array(
-'id' => 'ting4',
-'name' => 'widgetized-page-mid',
+'id' => 'bar2',
+'name' => 'BarThree',
 'before_widget' => '<div id="%1$s" class="widget %2$s">',
 'after_widget' => '</div>',
 'before_title' => '<h2 class="widgettitle">',
@@ -206,8 +206,8 @@ array(
 
 register_sidebars( 1,
 array(
-'id' => 'ting4',
-'name' => 'widgetized-page-upper-mid',
+'id' => 'bar3',
+'name' => 'BarFour',
 'before_widget' => '<div id="%1$s" class="widget %2$s">',
 'after_widget' => '</div>',
 'before_title' => '<h2 class="widgettitle">',

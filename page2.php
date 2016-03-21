@@ -8,19 +8,19 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
             
             <div id="box1">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("widgetized-page-top") ) : ?>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("BarOne") ) : ?>
                 <?php endif; ?>
             </div>
             <div id="box2">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("widgetized-page-bottom") ) : ?>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("BarTwo") ) : ?>
                 <?php endif; ?>
             </div>
             <div id="box3">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("widgetized-page-mid") ) : ?>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("BarThree") ) : ?>
                 <?php endif; ?>
             </div>
             <div id="box4">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("widgetized-page-upper-mid") ) : ?>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("BarFour") ) : ?>
                 <?php endif; ?>
             </div>
 		</main><!-- #main -->
