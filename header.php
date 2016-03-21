@@ -26,9 +26,6 @@
 
 	<header id="masthead" class="site-header" role="banner">		
 		<div id="logo">
-<<<<<<< HEAD
-			echo '<img src="http://imgur.com/Ew6KbuP" title="logo" width="350" height="150"/>';
-=======
 			<img src="http://imgur.com/Ew6KbuP.png" title="logo" />
 >>>>>>> origin/master
 		</div><!-- #header logo -->
