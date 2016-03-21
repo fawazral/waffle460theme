@@ -27,7 +27,6 @@
 	<header id="masthead" class="site-header" role="banner">		
 		<div id="logo">
 			<img src="http://imgur.com/Ew6KbuP.png" title="logo" />
->>>>>>> origin/master
 		</div><!-- #header logo -->
 		
 		<div id="header-menu">
