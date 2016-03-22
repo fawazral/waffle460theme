@@ -870,14 +870,14 @@ h2{
     margin-top: 0px;
 }
 
-@media screen and (max-width: 1044px) {
-    .main-navigation ul{
-        font-size: 0.8em;
-    }
-}
-@media screen and (max-width: 952px) {
+@media screen and (max-width: 1200px) {
     .main-navigation ul{
         font-size: 0.5em;
+    }
+}
+@media screen and (max-width: 852px) {
+    .main-navigation ul{
+        font-size: 0.2em;
         padding-left: 0px;
         padding-top: 0px;
     }
@@ -965,7 +965,7 @@ p.customtext
 #header-menu
 {
 	float: right;
-    padding-top: 45px;
+    padding-top: 65px;
 }
 
 #header-menu li
@@ -975,7 +975,7 @@ p.customtext
 	border-right: solid 2px;
 	margin-left: 30px;
 	padding-right: 30px;
-	font-size: 3em;
+	font-size: 1.5em;
     font-family: 'Candal', sans-serif;
 }
 
