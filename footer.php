@@ -26,6 +26,10 @@
 		</div><!-- .site-info -->
 					
 	</footer><!-- #colophon -->
+        
+        
+        
+        <script type="text/javascript">jQuery(document).ready(function($) {    $.backstretch("<?php echo get_stylesheet_directory_uri(); ?>/img/1234.jpg");});</script>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

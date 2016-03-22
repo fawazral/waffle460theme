@@ -633,11 +633,15 @@ a:active {
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+    
 }
 
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
+        text-align: center;
+        position: absolute;
+
 	}
 	.main-navigation ul {
 		display: block;
@@ -926,8 +930,6 @@ object {
 }
 
 #box1{
-    background-image: url("img/1234.jpg");
-    background-size:cover;
     height: 500px;
     
 }
@@ -962,11 +964,8 @@ h2{
     margin-top: 0px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 37.5em) {
     #box1{
-        background-image: url("img/1234.jpg");
-        background-size:cover;
-        width: 100%;
         height: 300px;
     }
 
