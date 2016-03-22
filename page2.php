@@ -2,6 +2,11 @@
 /**
 Template Name: Widgetized Page
  */
+/**
+Assignment: Wordpress Theme
+Description: Create a custom wordpres theme
+Group Members: Ralph Fawaz, Stefania Diaz, Zohair Hussain
+ */
 get_header(); ?>
 
 	<div id="primary" class="content-area">
