@@ -23,6 +23,10 @@ get_header(); ?>
                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("BarFour") ) : ?>
                 <?php endif; ?>
             </div>
+            <div id="box5">
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("BarFive") ) : ?>
+                <?php endif; ?>
+            </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

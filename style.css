@@ -857,6 +857,12 @@ object {
     color: #F8F8F8;
     font-family: 'Montserrat', sans-serif;
 }
+#box5{
+    background-color: #fff;
+    min-height: 400px;
+    padding: 5px 30px 3px 30px;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .widgettitle{
     text-align: center;

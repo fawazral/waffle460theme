@@ -215,3 +215,13 @@ array(
 'before_title' => '<h2 class="widgettitle">',
 'after_title' => '</h2>'
 ));
+
+register_sidebars( 1,
+array(
+'id' => 'bar4',
+'name' => 'BarFive',
+'before_widget' => '<div id="%1$s" class="widget %2$s">',
+'after_widget' => '</div>',
+'before_title' => '<h2 class="widgettitle">',
+'after_title' => '</h2>'
+));
