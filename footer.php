@@ -26,7 +26,7 @@
 		<div class="container">
 		
 		<div id="footer-menu">
-				<?php wp_nav_menu( array( 'theme_location' => 'secondary',
+				<?php wp_nav_menu( array( 'theme_location' => 'primary',
 					'menu_class' => 'foot-menu' ) ); ?>
 		</div><!--#footer-menu -->
 		
