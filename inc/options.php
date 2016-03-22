@@ -1,102 +1,74 @@
 <?php
 	
-function cd_add_submenu() {
+function yw_add_submenu() {
 		add_submenu_page( 'themes.php', 'My Super Awesome Options Page', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
 	}
-add_action( 'admin_menu', 'cd_add_submenu' );
+add_action( 'admin_menu', 'yw_add_submenu' );
 	
 
-function cd_settings_init() { 
-	register_setting( 'theme_options', 'cd_options_settings' );
+function yw_settings_init() { 
+	register_setting( 'theme_options', 'yw_options_settings' );
 	
 	add_settings_section(
-		'cd_options_page_section', 
-		'Your section description', 
-		'cd_options_page_section_callback', 
+		'yw_options_page_section', 
+		'Use this page to modify the header and footer of the theme', 
+		'yw_options_page_section_callback', 
 		'theme_options'
 	);
 	
-	function cd_options_page_section_callback() { 
-		echo 'A description and detail about the section.';
+	function yw_options_page_section_callback() { 
+		echo 'You have three main options to change the appearance of your there! The options are listed below:
+';
 	}
 
-	add_settings_field( 
-		'cd_text_field', 
-		'Enter your text', 
-		'cd_text_field_render', 
-		'theme_options', 
-		'cd_options_page_section' 
-	);
 
 	add_settings_field( 
-		'cd_checkbox_field', 
-		'Check your preference', 
-		'cd_checkbox_field_render', 
-		'theme_options', 
-		'cd_options_page_section'  
-	);
-
-	add_settings_field( 
-		'cd_radio_field', 
+		'yw_radio_field', 
 		'Choose an option', 
-		'cd_radio_field_render', 
+		'yw_radio_field_render', 
 		'theme_options', 
-		'cd_options_page_section'  
+		'yw_options_page_section'  
 	);
 	
 	add_settings_field( 
-		'cd_textarea_field', 
+		'yw_textarea_field', 
 		'Enter content in the textarea', 
-		'cd_textarea_field_render', 
+		'yw_textarea_field_render', 
 		'theme_options', 
-		'cd_options_page_section'  
+		'yw_options_page_section'  
 	);
 	
 	add_settings_field( 
-		'cd_select_field', 
+		'yw_select_field', 
 		'Choose from the dropdown', 
-		'cd_select_field_render', 
+		'yw_select_field_render', 
 		'theme_options', 
-		'cd_options_page_section'  
+		'yw_options_page_section'  
 	);
 
-	function cd_text_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	
+	function yw_radio_field_render() { 
+		$options = get_option( 'yw_options_settings' );
 		?>
-		<input type="text" name="cd_options_settings[cd_text_field]" value="<?php if (isset($options['cd_text_field'])) echo $options['cd_text_field']; ?>" />
+		<input type="radio" name="yw_options_settings[yw_radio_field]" <?php if (isset($options['yw_radio_field'])) checked( $options['yw_radio_field'], 1 ); ?> value="rgba(34,38,75,0.8)" /> <label>Default</label><br />
+		<input type="radio" name="yw_options_settings[yw_radio_field]" <?php if (isset($options['yw_radio_field'])) checked( $options['yw_radio_field'], 2 ); ?> value="#b56969" /> <label>Light Pink</label><br />
+		<input type="radio" name="yw_options_settings[yw_radio_field]" <?php if (isset($options['yw_radio_field'])) checked( $options['yw_radio_field'], 3 ); ?> value="#22264B" /> <label>Dark Blue</label>
 		<?php
 	}
 	
-	function cd_checkbox_field_render() { 
-		$options = get_option( 'cd_options_settings' );
-	?>
-		<input type="checkbox" name="cd_options_settings[cd_checkbox_field]" <?php if (isset($options['cd_checkbox_field'])) checked( 'on', ($options['cd_checkbox_field']) ) ; ?> value="on" />
-		<label>Turn it On</label> 
-		<?php	
-	}
-	
-	function cd_radio_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function yw_textarea_field_render() { 
+		$options = get_option( 'yw_options_settings' );
 		?>
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 1 ); ?> value="1" /> <label>Option One</label><br />
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 2 ); ?> value="2" /> <label>Option Two</label><br />
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 3 ); ?> value="3" /> <label>Option Three</label>
-		<?php
-	}
-	
-	function cd_textarea_field_render() { 
-		$options = get_option( 'cd_options_settings' );
-		?>
-		<textarea cols="40" rows="5" name="cd_options_settings[cd_textarea_field]"><?php if (isset($options['cd_textarea_field'])) echo $options['cd_textarea_field']; ?></textarea>
+		<textarea cols="40" rows="5" name="yw_options_settings[yw_textarea_field]"><?php if (isset($options['yw_textarea_field'])) echo $options['yw_textarea_field']; ?></textarea>
 		<?php
 	}
 
-	function cd_select_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function yw_select_field_render() { 
+		$options = get_option( 'yw_options_settings' );
 		?>
-		<select name="cd_options_settings[cd_select_field]">
-			<option value="1" <?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 1 ); ?>>Option 1</option>
-			<option value="2" <?php if (isset($options['cd_select_field'])) selected( $options['cd_select_field'], 2 ); ?>>Option 2</option>
+		<select name="yw_options_settings[yw_select_field]">
+			<option value="#e6cf8b" <?php if (isset($options['yw_select_field'])) selected( $options['yw_select_field'], 1 ); ?>>Default</option>
+			<option value="#b56969" <?php if (isset($options['yw_select_field'])) selected( $options['yw_select_field'], 2 ); ?>>Light Pink</option>
 		</select>
 	<?php
 	}
@@ -104,7 +76,7 @@ function cd_settings_init() {
 	function my_theme_options_page(){ 
 		?>
 		<form action="options.php" method="post">
-			<h2>My Awesome Options Page</h2>
+			<h2>Waffle Options Page</h2>
 			<?php
 			settings_fields( 'theme_options' );
 			do_settings_sections( 'theme_options' );
@@ -116,4 +88,4 @@ function cd_settings_init() {
 
 }
 
-add_action( 'admin_init', 'cd_settings_init' );
+add_action( 'admin_init', 'yw_settings_init' );

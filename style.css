@@ -825,6 +825,12 @@ object {
 	display: block;
 }
 
+
+
+
+
+
+
 #box1{
     height: 500px;
 }
@@ -832,22 +838,24 @@ object {
 #box2{
     min-height: 400px;
     padding: 0px 30px 3px 30px;
-    background-color: rgba(230,207,139,0.8);
-    color: #22264b;
+    background-color: #22264b;
+    font-family: 'Montserrat', sans-serif;
+    color: #F8F8F8 ;
 }
 
 #box3{
-    background-color: rgba(181,105,105,0.8);
+    background-color: #fff;
     min-height: 400px;
     padding: 5px 30px 3px 30px;
-    color: #22264b;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #box4{
     min-height: 400px;
     padding: 0px 30px 3px 30px;
-    background-color: rgba(230,207,139,0.8);
-    color: #22264b;
+    background-color: rgba(34,38,75,0.8);
+    color: #F8F8F8;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .widgettitle{
@@ -920,11 +928,18 @@ p.credits
 	
 #colophon 
 {
-	background-color: #22264b;
-    color: #e8edf3;
+	background-color: #e6cf8b;
+    color: rgba(34,38,75,0.8);
 }
 
 p.copyright 
+{
+	float: center;
+	text-align:center;
+	margin: 2px;
+}
+
+p.customtext 
 {
 	float: center;
 	text-align:center;
@@ -941,7 +956,7 @@ p.copyright
 }
 
 #footer-menu a {
-    color: #e8edf3;
+    color: rgba(34,38,75,0.8);
 }
 /*--------------------------------------------------------------
 # Header
@@ -976,6 +991,11 @@ p.copyright
 #logo
 {
     float: left;
+    padding-left: 75px;
+}
+
+#logo img{
+    max-height: 120px;
 }
 
 #header-menu li:last-child 
