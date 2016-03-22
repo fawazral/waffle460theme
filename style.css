@@ -833,18 +833,21 @@ object {
     min-height: 400px;
     padding: 0px 30px 3px 30px;
     background-color: rgba(230,207,139,0.8);
+    color: #22264b;
 }
 
 #box3{
     background-color: rgba(181,105,105,0.8);
     min-height: 400px;
     padding: 5px 30px 3px 30px;
+    color: #22264b;
 }
 
 #box4{
     min-height: 400px;
     padding: 0px 30px 3px 30px;
     background-color: rgba(230,207,139,0.8);
+    color: #22264b;
 }
 
 .widgettitle{
