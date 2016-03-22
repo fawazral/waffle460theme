@@ -158,6 +158,8 @@ function enqueueitems(){
     wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Candal', false );
 }
 
+add_action( 'wp_enqueue_scripts', 'enqueueitems' );
+
 require get_stylesheet_directory() .'/inc/options.php';
 
 

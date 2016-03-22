@@ -26,14 +26,14 @@
 
 	<header id="masthead" class="site-header" role="banner">		
 		<div id="logo">
-			<img src="http://imgur.com/Ew6KbuP.png" title="logo" />
+			<img src="http://i.imgur.com/dG5rKwO.jpg"title="logo" />
 		</div><!-- #header logo -->
 		
 		<div id="header-menu">
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'waffle460theme' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>	
-		</nav><!-- #site-navigation -->
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'waffle460theme' ); ?></button>
+                <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>	
+            </nav><!-- #site-navigation -->
 		</div><!-- # header-menu -->
 	</header><!-- #masthead -->
 	
