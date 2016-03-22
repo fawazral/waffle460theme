@@ -7,6 +7,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             
+            
+            
+            <!-- This page loads all the widgets and wraps each one in their own div -->
             <div id="box1">
                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("BarOne") ) : ?>
                 <?php endif; ?>

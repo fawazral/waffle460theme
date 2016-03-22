@@ -16,16 +16,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    
+    
+<!-- Call the options page -->
 <?php $options=get_option( 'yw_options_settings' ); ?>    
 
 
+    
 <?php wp_head(); ?>
     
+    <!-- Custom style from options page -->
     <style>
-#masthead {
-	background-color: <?php echo $options['yw_radio_field']; ?>
-}
-</style>
+        #masthead {
+	       background-color: <?php echo $options['yw_radio_field']; ?>
+        }
+    </style>
 </head>
 
 <body <?php body_class(); ?>>

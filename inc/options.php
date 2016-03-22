@@ -21,7 +21,9 @@ function yw_settings_init() {
 ';
 	}
 
-
+/**
+ * Radio Buttons
+ */
 	add_settings_field( 
 		'yw_radio_field', 
 		'Choose an option', 
@@ -30,6 +32,12 @@ function yw_settings_init() {
 		'yw_options_page_section'  
 	);
 	
+    
+/**
+ * Text Area 
+ */
+    
+    
 	add_settings_field( 
 		'yw_textarea_field', 
 		'Enter content in the textarea', 
@@ -37,6 +45,11 @@ function yw_settings_init() {
 		'theme_options', 
 		'yw_options_page_section'  
 	);
+    
+    
+/**
+ * Dropdown
+ */
 	
 	add_settings_field( 
 		'yw_select_field', 

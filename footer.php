@@ -10,13 +10,17 @@
  */
 
 ?>
+
+<!-- Call the options page -->
 <?php $options=get_option( 'yw_options_settings' ); ?>  
+<!-- Custom style from options page -->
 <style>
     #colophon{   
         background-color: <?php echo $options['yw_select_field']; ?>     
     }
-
 </style>
+
+
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">

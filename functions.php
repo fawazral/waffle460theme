@@ -152,7 +152,9 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 
-
+/**
+ * Enqueue the Google Font and JavaScript files
+ */
 function enqueueitems(){
     wp_enqueue_script('my-scripts', get_stylesheet_directory_uri() .'/js/scripts.js', array('jquery'), '1.0.0', true );
     wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Candal', false );
@@ -162,20 +164,17 @@ function enqueueitems(){
 
 add_action( 'wp_enqueue_scripts', 'enqueueitems' );
 
+
+/**
+ * Add the options page
+ */
 require get_stylesheet_directory() .'/inc/options.php';
 
+/**
+ * Create the widget content boxes
+ */
+    
 
-if ( function_exists('register_sidebar') ) {
-register_sidebar(array(
-'id' => 'InfoBar',
-'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
-'after_widget' => '</li></ul>',
-'before_title' => '<h2 class="widgettitle">',
-'after_title' => '</h2>',
-));
-}
-    
-    
 register_sidebars( 1,
 array(
 'id' => 'MainBar',
