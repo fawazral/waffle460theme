@@ -10,8 +10,13 @@
  */
 
 ?>
+<?php $options=get_option( 'yw_options_settings' ); ?>  
+<style>
+    #colophon{   
+        background-color: <?php echo $options['yw_select_field']; ?>     
+    }
 
-	</div><!-- #content -->
+</style>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
@@ -23,6 +28,13 @@
 		
 		<div class="info-site">
 			<p class="copyright">&copy; <?php echo date('Y'); ?> Made with &lt;3 by CCT460 students. All Rights Reserved.</p>
+            <p class="customtext"> 
+            
+               
+            <?php echo $options['yw_textarea_field']; ?>
+            
+            
+            </p>
 		</div><!-- .site-info -->
 					
 	</footer><!-- #colophon -->

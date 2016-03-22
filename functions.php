@@ -156,7 +156,8 @@ require get_template_directory() . '/inc/jetpack.php';
 function enqueueitems(){
     wp_enqueue_script('my-scripts', get_stylesheet_directory_uri() .'/js/scripts.js', array('jquery'), '1.0.0', true );
     wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Candal', false );
-     wp_enqueue_script('back', get_stylesheet_directory_uri() .'/js/backstretch.js', array('jquery'), '2.0.4', true );
+    wp_enqueue_style( 'google-font2', 'https://fonts.googleapis.com/css?family=Montserrat', false );
+    wp_enqueue_script('back', get_stylesheet_directory_uri() .'/js/backstretch.js', array('jquery'), '2.0.4', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueueitems' );

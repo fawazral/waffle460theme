@@ -16,8 +16,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<?php $options=get_option( 'yw_options_settings' ); ?>    
+
 
 <?php wp_head(); ?>
+    
+    <style>
+#masthead {
+	background-color: <?php echo $options['yw_radio_field']; ?>
+}
+</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -26,7 +34,7 @@
 
 	<header id="masthead" class="site-header" role="banner">		
 		<div id="logo">
-			<img src="http://i.imgur.com/dG5rKwO.jpg"title="logo" />
+			<img src="http://i.imgur.com/W5b2CTq.png"title="logo" />
 		</div><!-- #header logo -->
 		
 		<div id="header-menu">
